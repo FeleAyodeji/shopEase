@@ -1,6 +1,11 @@
 function ProductItem({ product, addToCart }) {
   return (
     <div className="p-4 border rounded shadow-lg">
+      <img
+        src={product.imageUrl}
+        alt={product.name}
+        className="w-full h-48 object-cover rounded mb-4"
+      />
       <h3 className="text-xl font-semibold">{product.name}</h3>
       <p className="text-gray-600">${product.price}</p>
       <button
